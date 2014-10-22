@@ -1,0 +1,12 @@
+# 8th presentation: Documentation
+
+- @ngdoc: kind of jsdoc used to document AngularJS
+- the docs of AngularJS is in the code and extracted from it
+- dgeni: Flexible JavaScript documentation generator used by AngularJS, Protractor and other JS projects
+  * extracts documentation from sources
+  * DI (like Angular)
+  * use as a node module
+- can be used in a Gulp task
+- npm install --save-dev dgeni dgeni-packages
+
+
