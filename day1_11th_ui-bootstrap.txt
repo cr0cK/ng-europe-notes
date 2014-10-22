@@ -1,0 +1,3 @@
+# 11th presentation: ui-bootstrap
+
+https://github.com/vojtajina/ng-directive-testing
