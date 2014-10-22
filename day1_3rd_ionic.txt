@@ -1,0 +1,8 @@
+# 3rd presentation: ionic framework
+
+Andrew Joslin
+
+Impressive live code.
+
+Usefull: api.randomuser.me
+Android emulator: genymotion

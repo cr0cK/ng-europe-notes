@@ -1,0 +1,40 @@
+# 4th presentation: Angular Dart
+
+- dartium (dev), compiles to JS
+- version 1.0 (oct 10 2014)
+
+- templates are same than AngularJS
+- under the hood:
+  Putting app together > Compile the HTML > Reacting to user interactions
+- Putting app together
+```
+  Angular Module > Application (Injector) > run
+  Todo Module    >
+```
+- app.run()
+  Compiler > ViewFactory > View
+- Compile HTML to ViewFactory
+  * Walks the DOM
+  * Store in ElementBinders
+- {{}}, ng-repeat, etc. are decorators hover classes
+- ng-repeat > HTML Comment > ViewPort (transclude)
+- Scope digest:
+```
+  [t1,t2,t3] > pendingTasks > pendingTasks.length > pendingTasks.isEmpty
+             > task, task, task
+```
+- zones (part of dart:async)
+  Ported to JS to zones.js
+- Zones event loop:
+```
+  my z = zone.fork(...);
+  z.run(f);
+  > execution
+  > once zone done, apply()
+```
+
+## New concepts in v2
+- @annotations
+- Views and ViewPorts
+- Zones
+- per elements Injectors
