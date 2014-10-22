@@ -1,6 +1,4 @@
-# 5th presentation: XXX
-
-Can we learn from architects?
+# 5th presentation: Can we learn from architects?
 
 - pure functions
 ```
