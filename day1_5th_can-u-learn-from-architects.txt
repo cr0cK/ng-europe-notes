@@ -1,0 +1,50 @@
+# 5th presentation: XXX
+
+Can we learn from architects?
+
+- pure functions
+```
+// parse(), transform(), write()
+
+var c = new FunkyCompiler();
+c.parse('toto = true');
+c.transform();
+var output = c.write();
+
+// vs
+
+var c = new FunkyCompiler();
+var tree = c.parse('toto = true');
+    tree = c.transform(tree);
+var output = c.write(tree);
+
+// here the trick:
+
+var c = new FunkyCompiler();
+var tree = c.parse('toto = true');
+var tree2 = c.parse('toto=true');
+    tree = c.transform(tree);
+    tree2 = c.transform(tree2);  // here, my compiler already knows how to transform
+var output = c.write(tree);
+var output2 = c.write(tree2);
+```
+
+- scopes
+```
+// bad
+function () {
+  var config;
+
+  this.start = function () {
+    exec('chrome', config);
+  }
+}
+
+// good
+function () {
+  this.start = function (config) {
+    var config_ = config;
+    exec('chrome', config_);
+  }
+}
+```
