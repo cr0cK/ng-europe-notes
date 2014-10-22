@@ -1,0 +1,42 @@
+# 10th presentation: The new router
+
+Rob Eisenberg
+
+## Familiar features
+- Configuration
+- 404 handling
+- History manipulation
+
+## New features
+- convetions
+- navigation model
+- document title updates
+
+## Features
+
+### Dynamic Loading
+
+### Childs apps
+- the app router & child routers
+- state management & component reuse
+- parallel controllers
+
+### Screen activation
+- Lifecycle
+  * to: canActivate > activate
+  * from: canDeactivate > deactivate
+- Promises
+- NavigationCommands
+
+### Navigation Pipeline
+- NavigationInstruction
+- NavifationContext
+- Pipeline
+
+### Customization
+- Configuration/Conventions
+- NavigationInstruction
+- NavigationCommand
+- Pipeling
+- History
+- ViewPort
