@@ -1,0 +1,7 @@
+# 7th presentation: Material design
+
+- set of directives
+- responsive
+- ARIA (Accessibility for Rich Internet Applications) available in all material components)
+- grid and css layouts
+- Beta in Q4, 2014
