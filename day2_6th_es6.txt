@@ -1,0 +1,117 @@
+# 6th presentation - ES6 and traceur
+
+- ES6: part of all browsers soon
+- Make it part of your own chain tool
+- Already used in Angular 2
+
+## Classes
+ -
+ ```
+ class Point3D extends Point {
+   constructor(x, y, z) {
+     super(x, y);
+     this.z = z;
+   }
+
+   equals {
+     ...
+   }
+ }
+ ```
+
+ - when: abstractions
+ - what: prototype based, better syntax, super is working, class side inheritance
+
+## Modules
+
+ - Today: AMD, CommonJS + browserify
+ - AMD: define(['./Parse', './SourceFile'], function (Parser, SourceFile) { });
+ - CJS: modules.exports = exportedValue;
+
+ - ES6
+ ```
+ import {Parser} from './Parser.js';
+
+ export Class C { ... }
+ export function f() { ... }
+ ```
+
+ - When: Better logical grouping, when your does not fit in one file
+ - What: So async load, static dependencies, static validation, cyclic dependencies
+
+## Scopes
+
+ - today: loose this reference everywhere, using .bind(this);
+ - ES6: Arrow functions
+
+ - When: anytime you have bind(this) or callbacks
+ - What: Lexical this (as well as argulents and super), short
+
+## Default parameters
+
+ - ES6: function saveFile(content = 'blah');
+
+## Rest parameters
+
+ - ES6: function max(x, ...args)
+ - When: when you use arguments
+ - What: It's a real array
+
+## ES6 support: http://kangax.github.io/compat-table/es6/
+
+## Traceur
+
+ - Compile ES6 (and more) to ES5
+ - Works in all modern browser
+ - written in ES6
+ - Designed to be a platform for experimentations
+ - Highly modular and configurable
+
+### How does it work?
+
+ - Compile source into an AST
+ - Transform the AST without no specific language
+ - AST is used to read source and source map
+
+ Notes:
+
+ - Replace assert expressions to void 0
+
+## Atscript
+
+ - type annotations
+ - type assertions
+ - annotations
+
+### Types annotations
+
+ - function repeat(s: string, n:number): string { ... }
+ - no more JSDoc comment
+   * dry
+   * do not get out of sync
+   * concise
+ - allows tools & IDEs to be awesome
+
+### Type assertions
+
+ - $tr.types.string
+ - catches errors
+ - debug mode
+
+### Annotations
+
+ - today:
+```
+function repeat(s, n) { ... }
+repeat.metadata = ...
+```
+
+ - @annotations
+ repeat.annotations
+
+ - attaches meta datas
+ - no out of bounds
+ - DI
+ - Component / directives descriptions
+
+More: google/traceur-compiler
