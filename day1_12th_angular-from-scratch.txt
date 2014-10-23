@@ -1,0 +1,4 @@
+# 12th presentation: angular from scratch
+
+- livecode during the speaker (re)wrote the basics of Angular
+- https://github.com/Swiip/angular-from-scratch

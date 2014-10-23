@@ -1,0 +1,10 @@
+# Lighting Talks
+
+## Animations
+- angular-motion
+- angular-strap
+
+## delta.js
+- ?
+
+## angular-utils-pagination

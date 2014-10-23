@@ -1,0 +1,3 @@
+# 13th presentation: Building a responsive site
+
+- Tips: use ng-switch on viewport? to display the wanted part of design according to the device

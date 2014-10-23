@@ -1,0 +1,17 @@
+# Keynote
+
+- API of directives are complicated, AngularJS team is working on a better API
+- Better types verification (assertion) inspired by Dart
+- Allows to check JSON responses from servers
+- Types & annotations introspection
+- Abtractions:
+  Declarative: angular, DI
+  Contracts: Types
+- 'Atscript' could be compiled to ES5 or Dart files with Traceur
+- Roadmap
+```
+Atscript                IDE support           Align with TypeScript                       Browser support
+Runtime Type Checking   Static Type Checking                          EcmaScript proposal                 EcmaScript standard
+```
+- Atscript = ES6 + Types + annotations
+- More information: https://docs.google.com/document/d/1cUTD8oVzfpwFqX5tMxHTifKO8uJm5VddwmB0aVQMxpI/edit
