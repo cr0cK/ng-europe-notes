@@ -1,0 +1,44 @@
+# 11th presentation - Software designs in AngularJS
+
+## Angular and OO patterns
+
+- Injected singletons
+  * cache for application level data
+  * facade for browser and 3rd party APIs
+  * factory for instanciating other objects  
+
+  The biggest strength is the ease to swap a service (usually for testing)
+
+- Data binding (DB)
+  * DB is an implementation of the traditional observer pattern
+  * Prevents tight coupling between independent parts of a complicated UI
+
+- Inheritance for services & controllers
+  * Standard JS prototypal inheritance can be used with services and controllers
+  * Avoid inheritance for page controllers
+
+## Patterns for building clean maintenable applications
+
+ - Models are a good place to encapsulate common domain logic
+
+## Directive Proxy Object
+
+ - controller < DB > Directive
+ - controller > Proxy < > Directive
+ - Pass the proxy to an attr of the directive
+ - The controller now manipules the model state via the Proxy
+
+## Polymorphism
+
+ - Example: A directive witch ng-include a filter.templateUrl src pass viaed an isolate scope
+
+## Anti-patterns
+
+ - War and peace controllers
+ - "Forgot About Dialogs" Global State
+   Using services to store "per-page" state and clearing upon route change.
+ - Magical Prototype Chain Dependency
+
+## Slides
+
+ - goo.gl/5Oh2u8
