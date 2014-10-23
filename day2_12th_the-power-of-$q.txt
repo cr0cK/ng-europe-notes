@@ -1,0 +1,37 @@
+# 12th presentation - The power of $q
+
+## Pros
+
+- // with $q.all
+- .all().then(spread(function(user, permissions)))
+- promises are (mostly) immutable
+- dynamics: can push promises and resolve them with $q.all
+- why deferred and promise ?
+  * force a separation between notifier and receiver
+
+## Errors
+
+- deferred.reject()
+
+## Status
+
+- deferred.notify()
+- .then(function () {}, function () { /* error */ }, function () /* progress */ });
+
+## One time use
+
+- cannot be resolved or deferred again
+- then() can be connected after the resolution, the callback will be triggered during the next digest loop
+
+## $q.when
+
+- Useful to resolve a cached value (saved during a previous resolution) or a promise
+  $q.when(cachedValue || getValue()).then(...);
+- Don't forget to save the current promise to handle calls between the call and the results not already fetched
+  $q.when(cachedValue || p || getValue()).then(...);
+
+## Notes
+
+- $q is aware of the digest loop, not the origin "Q".
+- Native promises coming soon
+- Conclusion: avoid callback(), use promise.
