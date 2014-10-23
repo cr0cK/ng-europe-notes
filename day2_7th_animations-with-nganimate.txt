@@ -1,0 +1,10 @@
+# 7th presentation - Animations with nganimate
+
+- ng-repeat: enter, leave, move
+- ng-repeat stagger
+- 1.3: transitions & keyframe, promise-based animations
+- ng-animate-children
+- $animate now used promises (don't forget $apply())
+- $animate.animate // one time animation
+- ngAnimateLayout
+

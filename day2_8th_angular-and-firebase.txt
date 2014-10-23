@@ -1,0 +1,8 @@
+# 8th presentation - AngularJS and firebase
+
+- Firebase: sync apps whatever devices
+- AngularFire
+- $firebase(New Firefase('url'))
+- firebase init
+- firebase deploy
+
