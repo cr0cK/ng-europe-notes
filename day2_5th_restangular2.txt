@@ -1,0 +1,27 @@
+# 5rd presentation - Restangular 2.0
+
+## Restangular 1
+
+- R1 is doing this stuff:
+```
+$scope.users.getList('cars');
+Calculate URL
+Pre Request hooks
+Call API
+Parse Response > Restangularize Element
+                        v
+                 Extend Model Hook
+                        v
+                 Post response to hooks
+                        v
+                 Return data to the user
+```
+
+## Restangular 2
+
+- Written in ES6
+- Reorganization of files: split into models, services, extensions
+- Stop monkey patching models, better inheritance
+- static beforeRequest, parseResponse methods instead of interceptors
+- better many to many relations declarations
+- make Angular part optional: possibility to use an another lib than $q or $http (for example q and $.ajax).

@@ -1,0 +1,4 @@
+# 4rd presentation - Yet another way to animate
+
+Some animations implements in Angular directives.
+But specific implementations, not very flexible...
