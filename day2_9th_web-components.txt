@@ -1,0 +1,24 @@
+# 9th presentation - AngularJS and Web components
+
+## Four technologies
+- html templates
+- shadow dom: style and dom encapsulation
+- custom elements
+- html imports
+
+### shadom dom
+ - s.createShadowRoot(); s.appendChild(html);
+
+### custom elements
+ - document.registerElement('custom-element', {'Prototype': Proto});
+ - var Proto = Object.create(HTMLElement);
+ - Proto.createCallback
+ - <custom-element></custom-element>
+
+### html import
+ - <link rel="import" href="/path/to/import.html" />
+
+### All together
+ - DOM attrs changes can be detected using DOM Mutation Observers
+ - Element properties changes will be detected most likely using events
+

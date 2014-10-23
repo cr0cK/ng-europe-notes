@@ -1,0 +1,13 @@
+# 10th presentation - Accessibility
+
+- ngAria
+- <body role="application"></body> // disables a screen reader's "virtual cursor"
+- <div ng-click> // keyboard not working
+- <button ng-click> // keyboard ok
+- <md-button> // material design button
+- ngAria fully supported in Material design directives
+
+## Tools:
+
+- Chrome Accessibility Dev Tools
+- Color Constrast Checker
