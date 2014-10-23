@@ -1,0 +1,19 @@
+# 3rd presentation - Better animations with famo.us
+
+- CSS3 animations are hard
+
+- Some stuff can't be done with only CSS: physics, etc
+
+- famo.us:
+  * own render-tree composing engine
+  * more like we get in the words of 3D graphics, OpenGL, DirectX
+  * could be hard but performant, unlimited...
+
+- We can't write JS code in CSS (no Math.sin and other physics), so famo.us allows to write a sheet code
+- It allows to declare JS objects with selectors CSS as keys and write some logics/transformations inside
+
+- Future:
+  * will be integrating with Angular 2 using AtScript.
+  * WebGL incoming
+  * Better API
+

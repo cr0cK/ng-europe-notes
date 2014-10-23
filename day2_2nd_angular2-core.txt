@@ -1,0 +1,37 @@
+# 2nd presentation - Angular 2.0 core
+
+- Written with Atscript
+- ng-checked => [checked]
+- bindings: push/pull
+- RIP controllers
+- RIP DDO (directive definition objects)
+
+@ComponentDirective
+class TodoApp {
+  constructor() {}
+  addTodo: function() {}
+  removeToto: function() {}
+}
+
+@TemplateDirective({...})
+class NgRepeat {}
+
+- RIP $scope
+  (no child scope for ngrepeat for example)
+
+- RIP angular.module
+  import {TodoStore} from './store';
+
+- DI: constructor(tabs:Query<TabPane>) { ... }
+
+- loop(Measure > Analyse > Improve)
+- Macro optimizations
+
+- RIP jqLite
+
+- Summary
+  * generic bindings syntax
+  * DI query mechanism
+  * benchpress
+  * WTF instrumentation
+  * RIP controllers, DDO, $scope, angular.module, jqLite

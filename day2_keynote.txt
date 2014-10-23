@@ -13,5 +13,6 @@
 Atscript                IDE support           Align with TypeScript                       Browser support
 Runtime Type Checking   Static Type Checking                          EcmaScript proposal                 EcmaScript standard
 ```
-- Atscript = ES6 + Types + annotations
+- Atscript = ES6 + Types + annotations + introspection
 - More information: https://docs.google.com/document/d/1cUTD8oVzfpwFqX5tMxHTifKO8uJm5VddwmB0aVQMxpI/edit
+- ES6 compatibility: http://kangax.github.io/compat-table/es6/
