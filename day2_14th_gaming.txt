@@ -1,0 +1,35 @@
+# 14th presentation - Gaming with Angular.
+
+- Games is not only a canvas.
+- All outside the canvas is not handled by the gaming library, Angular could.
+- Some gaming libs: Phaser, PixiJS
+
+## Phaser
+
+### Stuff
+
+- preloading assets (images, sprites, audio, fonts...)
+- create the game object
+- create a text navigation
+  (note for fontsize: use platform detection)
+- setup interaction
+  note: newGame.inputEnabled = true
+- handling the game states
+- implements the update loop
+
+### Client
+
+- Browserify Angular:
+  module.exports = angular.module
+- canvas in a directive
+- it's a good pratice to save the link function in its own module (module.exports)
+- load Phaser and all the game in the link function
+- Clean up: scope.$on('$destroy', { function ( game.destroy(); )})
+- Tips: Use the injector in the link function in order to have whatever service we want
+- use events via the scope to communicate between the game and angular
+- wait socket.io loading with a $provider returning a promise
+
+### Logic
+
+- Handle game logic in the server
+- use websockets to broadcast events to clients

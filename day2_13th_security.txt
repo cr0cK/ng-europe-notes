@@ -1,0 +1,10 @@
+# 13th presentation - Security
+
+- angular-storage
+- angular-jwt
+
+- Token-based Authentification instead of cookie authentification
+- online service for token verification: jwt.io
+
+- Example of an application witch saves the auth token in localStorage to manage redirections.
+- Send the token via headers by using $http interceptors.
